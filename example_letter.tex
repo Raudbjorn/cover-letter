@@ -1,0 +1,79 @@
+% ============================================================================
+% Example Cover Letter using the 'coverletter' class
+% ============================================================================
+\documentclass{coverletter}
+
+% --- Optional Package Includes ---
+% Include packages needed ONLY for this specific letter's content
+% \usepackage{lipsum} % For dummy text generation, remove in real letter
+
+% --- Signature Details ---
+% Fill in your details using the commands defined in the class
+\signatureName{Your Name Here}
+\signatureTitle{Your Job Title / Profession}
+\signatureEmail{your.email@example.com}
+\signaturePhone{+123 456 7890}
+\signatureWebsite{https://your.website.com}
+\signatureGithub{https://github.com/yourusername}
+\signatureLinkedin{https://linkedin.com/in/yourusername}
+% Provide paths to your actual image files
+\signatureImageFile{signature.png} % Placeholder, replace with your image path
+\signatureQRCodeFile{qr.png}       % Placeholder, replace with your QR code image path
+
+% ============================================================================
+% Document Body
+% ============================================================================
+\begin{document}
+
+% --- Header: Date and Logo ---
+% Uses the tabular* setup from the original Icelandic letter
+\noindent
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  \parbox[c]{0.5\textwidth}{\today}
+  &
+  \parbox[c]{0.5\textwidth}{\raggedleft
+    \begin{tikzpicture}
+      \clip (0,0) circle (0.75cm);
+      \node at (0,0) {\includegraphics[height=1.5cm]{logo.png}}; % Placeholder logo path
+    \end{tikzpicture}}
+\end{tabular*}
+\vspace{1.5cm} % Space after header
+
+% --- Salutation ---
+Dear [Hiring Manager Name or "Hiring Team"],
+
+\vspace{0.5cm} % Consistent spacing
+
+% --- Opening Paragraph ---
+I am writing to express my strong interest in the [Job Title] position advertised on [Platform where you saw the ad, e.g., LinkedIn, company website]. Having followed [Company Name]'s work in [Industry/Area] for some time, I am very impressed with [Mention something specific, e.g., your recent project, company values, innovative approach].
+
+% --- Body Paragraph 1: Connection & Key Skills ---
+My background in [Your Key Field, e.g., software development, data analysis] and my experience in [Specific relevant skill/area 1] and [Specific relevant skill/area 2] align well with the requirements outlined in the job description. In my previous role at [Previous Company], I was responsible for [Briefly describe a key achievement or responsibility relevant to the target job].
+
+% --- Body Paragraph 2: More Skills/Experience ---
+Furthermore, my experience with [Technology/Skill 3] and [Technology/Skill 4] would allow me to quickly contribute to [Mention a potential contribution or team goal]. I am particularly drawn to [Aspect of the role or company culture] and believe my [Soft skill, e.g., collaborative spirit, problem-solving skills] would be a valuable asset to your team.
+
+% --- Optional Paragraph: Addressing Specific Requirements ---
+% If the job description mentioned specific tools, qualifications, or challenges, address them here.
+% For example: You mentioned requiring experience with [Specific Tool]; I have utilized this extensively for [Specific task/project].
+
+% --- Closing Paragraph ---
+I am enthusiastic about the opportunity to bring my skills and experience to [Company Name] and contribute to your continued success. Thank you for considering my application. I have attached my resume for your review and welcome the chance to discuss my qualifications further.
+
+% Reference to online CVs (if applicable)
+% Nánari upplýsingar um feril minn má finna á ferilskránni minni á netinu:
+% \vspace{-\parskip} % Remove space before itemize
+% \begin{itemize}
+%     \item \url{https://your.cv.link1}
+%     \item \url{https://your.cv.link2}
+% \end{itemize}
+
+\vspace{0.5cm}
+
+% --- Closing ---
+Sincerely,
+
+% --- Signature ---
+\makesignature % Command from the class
+
+\end{document} 
