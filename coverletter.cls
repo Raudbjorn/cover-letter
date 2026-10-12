@@ -12,7 +12,7 @@
 \RequirePackage{setspace} % Added setspace package
 
 % --- Other Packages ---
-\RequirePackage[icelandic]{babel}
+\RequirePackage[english]{babel}
 \RequirePackage{fontspec}
 \RequirePackage{xunicode}
 \RequirePackage{hyperref}
